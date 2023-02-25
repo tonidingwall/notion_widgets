@@ -59,6 +59,7 @@
 
 	<nav class="navMenu  border">
 		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-sharp fa-regular fa-rocket-launch"></i> Projects</a>
 	
 
 
@@ -72,12 +73,15 @@
 		if (direction === "vertical") {
 			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
 		}
+	
 
 
 		function navigate(id) {
 
 			if (id == 'home')
-				window.open("https://example.com", '_blank').focus();
+				window.open("https://home.com", '_blank').focus();
+			else if (id == 'projects')
+				window.open("https://projects.com", '_blank').focus();
 	
 
 		}
